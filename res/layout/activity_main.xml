@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:demoapp="http://schemas.android.com/apk/res/com.example.mylistview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+    
+    
+        <com.example.mylistview.CustomFastScrollView
+        android:id="@+id/fast_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        demoapp:overlayHeight="40dp"
+        demoapp:overlayScrollThumbWidth="40dp"
+        demoapp:overlayTextSize="18dp"
+        demoapp:overlayWidth="100dp" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+    </com.example.mylistview.CustomFastScrollView>
+    
+        
+
+</LinearLayout>
